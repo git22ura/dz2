@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<name xmlns="">ВозрастЧеловекаВПолныхМесяцах</name>
+	<test-cases xmlns="" xmlns:d2p1="urn:model.allure.qatools.yandex.ru">
+		<test-case start="63607642458396" stop="63607642459161" status="passed">
+			<name>Возраст относительно молодого сотрудника</name>
+			<steps>
+				<step start="63607642458737" stop="63607642458738" status="passed">
+					<name>Допустим у меня есть дата рождения человека 23.08.1976</name>
+					<title>Допустим у меня есть дата рождения человека 23.08.1976</title>
+				</step>
+				<step start="63607642458860" stop="63607642458861" status="passed">
+					<name>И моя текущая дата 24.08.2016</name>
+					<title>И моя текущая дата 24.08.2016</title>
+				</step>
+				<step start="63607642459139" stop="63607642459159" status="passed">
+					<name>Тогда возраст человека в месяцах 480</name>
+					<title>Тогда возраст человека в месяцах 480</title>
+				</step>
+			</steps>
+			<labels>
+				<label name="story" value="Возраст относительно молодого сотрудника"/>
+			</labels>
+		</test-case>
+		<test-case start="63607642459360" stop="63607642460170" status="passed">
+			<name>Возраст неродившегося человека</name>
+			<steps>
+				<step start="63607642459721" stop="63607642459722" status="passed">
+					<name>Допустим у меня есть дата рождения человека 31.12.2099</name>
+					<title>Допустим у меня есть дата рождения человека 31.12.2099</title>
+				</step>
+				<step start="63607642459953" stop="63607642459954" status="passed">
+					<name>И моя текущая дата 24.08.2016</name>
+					<title>И моя текущая дата 24.08.2016</title>
+				</step>
+				<step start="63607642460155" stop="63607642460169" status="passed">
+					<name>Тогда возраст человека в месяцах "неопределено"</name>
+					<title>Тогда возраст человека в месяцах "неопределено"</title>
+				</step>
+			</steps>
+			<labels>
+				<label name="story" value="Возраст неродившегося человека"/>
+			</labels>
+		</test-case>
+		<test-case start="63607642460376" stop="63607642460981" status="passed">
+			<name>Возраст 10-ти дневного младенца</name>
+			<steps>
+				<step start="63607642460557" stop="63607642460559" status="passed">
+					<name>Допустим у меня есть дата рождения человека 24.08.2016</name>
+					<title>Допустим у меня есть дата рождения человека 24.08.2016</title>
+				</step>
+				<step start="63607642460761" stop="63607642460762" status="passed">
+					<name>И моя текущая дата 03.09.2016</name>
+					<title>И моя текущая дата 03.09.2016</title>
+				</step>
+				<step start="63607642460965" stop="63607642460979" status="passed">
+					<name>Тогда возраст человека в месяцах 0</name>
+					<title>Тогда возраст человека в месяцах 0</title>
+				</step>
+			</steps>
+			<labels>
+				<label name="story" value="Возраст 10-ти дневного младенца"/>
+			</labels>
+		</test-case>
+	</test-cases>
+	<labels xmlns="" xmlns:d2p1="urn:model.allure.qatools.yandex.ru">
+		<label name="feature" value="ВозрастЧеловекаВПолныхМесяцах"/>
+		<label name="framework" value="vanessa-behavior"/>
+		<label name="language" value="1С"/>
+	</labels>
+</ns2:test-suite>
